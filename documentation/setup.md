@@ -4,10 +4,11 @@ This dramatically reduces the amount of work that developers have to do to get t
 # Installation
 
 1. Install NPM
-2. Install the loopback CLI tool: `npm i -g loopback-cli`
-3. Install project dependencies: `npm i`
-4. Run the server: `node .`
-5. Navigate to `localhost:3000/explore` for an overview of the API, or use the endpoints described there to gather data for your application
+2. Install MongoDB
+3. Install the loopback CLI tool: `npm i -g loopback-cli`
+4. Install project dependencies: `npm i`
+5. Run the server: `node .`
+6. Navigate to `localhost:3000/explore` for an overview of the API, or use the endpoints described there to gather data for your application
 
 # Deployment
 

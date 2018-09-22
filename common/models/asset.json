@@ -1,0 +1,66 @@
+{
+  "name": "asset",
+  "plural": "assets",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "purchase": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "loan": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "name-of-loaner": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "source": {
+      "type": "string"
+    },
+    "dateObtained": {
+      "type": "date",
+      "required": true
+    },
+    "laborValue": {
+      "type": "number"
+    },
+    "deprecationScheduled": {
+      "type": "date"
+    },
+    "dateDisposed": {
+      "type": "date"
+    },
+    "methodDisposed": {
+      "type": "string"
+    },
+    "saleValue": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -42,5 +42,9 @@
   "member": {
     "dataSource": "db",
     "public": true
+  },
+  "bill": {
+    "dataSource": "db",
+    "public": true
   }
 }

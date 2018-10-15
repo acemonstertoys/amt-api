@@ -10,7 +10,7 @@ services:
                 # persist the data on the host rather than in the container
                 # this makes the container disposable without losing the data
                 volumes:
-                        - ./data/db:/data/db
+                        - ./data:/data/db
                 # forward the standard mongoDB port
                 ports:
                         - "27017:27017"
@@ -29,4 +29,3 @@ services:
                 # forward the web port to the server's port
                 ports:
                         - "3000:8080"
-

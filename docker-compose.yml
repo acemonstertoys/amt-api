@@ -1,0 +1,31 @@
+version: '2'
+services:
+        # Start the standard MongoDB container
+        mongodb:
+                container_name: "mongodb"
+                image: mongo:latest
+                environment:
+                        - MONGO_DATA_DIR=/data/db
+                        - MONGO_LOG_DIR=/dev/log
+                # persist the data on the host rather than in the container
+                # this makes the container disposable without losing the data
+                volumes:
+                        - ./data:/data/db
+                # forward the standard mongoDB port
+                ports:
+                        - "27017:27017"
+                # start mongodb
+                command: mongod --smallfiles
+        web:
+                container_name: "amt-api"
+                build: .
+                restart: always
+                # link the API to the mongoDB container
+                links:
+                        - mongodb:mongodb
+                # we need that container
+                depends_on:
+                        - mongodb
+                # forward the web port to the server's port
+                ports:
+                        - "3000:8080"

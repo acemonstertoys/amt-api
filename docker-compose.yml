@@ -16,7 +16,7 @@ services:
                         - "27017:27017"
                 # start mongodb
                 command: mongod --smallfiles
-        web:
+        app:
                 container_name: "amt-api"
                 build: .
                 restart: always

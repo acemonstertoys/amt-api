@@ -12,5 +12,5 @@ This dramatically reduces the amount of work that developers have to do to get t
 
 # Deployment
 
-This project will be dockerized, eventually. We should also dockerize the database container.
+This project uses docker. See the accompanying deployment repository for the docker-compose file used in production. Ensure that the docker file in this repository remains compatible with that setup.
 

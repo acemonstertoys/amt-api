@@ -1,0 +1,35 @@
+{
+  "name": "accesssLog",
+  "plural": "accessLogs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "rfid": {
+      "type": "number",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "result": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

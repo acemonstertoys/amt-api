@@ -8,7 +8,9 @@
   },
   "properties": {
     "fob": {
-      "type": "number",
+      "type": [
+        "number"
+      ],
       "required": true
     },
     "name": {

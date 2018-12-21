@@ -12,7 +12,9 @@
       "required": true
     },
     "rfid": {
-      "type": "number",
+      "type": [
+        "number"
+      ],
       "required": true
     }
   },

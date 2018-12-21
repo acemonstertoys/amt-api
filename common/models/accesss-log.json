@@ -1,23 +1,29 @@
 {
-  "name": "member",
-  "plural": "members",
+  "name": "accesssLog",
+  "plural": "accessLogs",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "fob": {
-      "type": [
-        "number"
-      ],
+    "timestamp": {
+      "type": "date",
       "required": true
     },
     "name": {
       "type": "string",
       "required": true
     },
-    "id": {
+    "rfid": {
+      "type": "number",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "result": {
       "type": "number",
       "required": true
     }

@@ -46,5 +46,13 @@
   "bill": {
     "dataSource": "db",
     "public": true
+  },
+  "cert": {
+    "dataSource": "db",
+    "public": true
+  },
+  "accesssLog": {
+    "dataSource": "db",
+    "public": true
   }
 }
